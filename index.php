@@ -7,11 +7,35 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Homepage</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+  <main class="container">
+  <div class="row fixed-top">
+  <?php 
+  include("./header.php");
+  ?>
+  </div>
+  <div class="row" id="content">
+      <div class="col-12"></div>
+      <?php
+      
+      if (isset($_GET["content"]) ) {
+        include("./" . $_GET["content"] . ".php");
+      }
+      else {
+        include("./home.php");
+      }
+      ?>
+    </div>
+ <div class="row fixed-bottom">
+<?php 
+include("./footer.php")
+?>
+</div>
+  </main>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

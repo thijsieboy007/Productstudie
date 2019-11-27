@@ -1,0 +1,35 @@
+#header{
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    background-color: #00AEEF;
+    padding: 16px;
+}
+
+#title{
+    text-align: center;
+}
+
+#icon{
+    float: right;
+    width: 64px;
+    height: 64px;
+}
+
+
+footer {
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    background-color: rgb(71, 74, 75);
+    padding: 4px;
+}
+ 
+#login{
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    float: right;
+    margin-right: 14px;
+}
+
+#menu{
+    float: left;
+}
